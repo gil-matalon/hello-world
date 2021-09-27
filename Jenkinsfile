@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Welcome') {
             steps {
-                echo 'Welcome'
+                echo 'Welcome' + ${Name}
             }
         }
     }
