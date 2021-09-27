@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Welcome') {
             steps {
-                echo 'Welcome' + ${parameters.Name}
+                echo 'Welcome' + ${params.Name}
             }
         }
     }
