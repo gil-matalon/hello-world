@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'first' }
     triggers {
-		pollSCM '* * * * *'
+		pollSCM '0-59/6 * * * *'
 	}
     parameters {
       string defaultValue: 'Gil', description: 'The name of the user ', name: 'Name', trim: false
