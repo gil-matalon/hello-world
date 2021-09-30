@@ -12,7 +12,7 @@ pipeline {
 					}
 					steps {
 						echo "Build $env.ENV"
-						sleep 5						
+						sleep 10						
 					}
 				}
 				stage ('Build Production') {
