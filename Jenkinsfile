@@ -12,7 +12,8 @@ pipeline {
 				ENV = "Dev"
 			}
 			steps {
-				echo "Build $env.ENV"				
+				echo "Build $env.ENV"	
+				sleep 2
 			}
 		}
 		stage ('Build Production') {
