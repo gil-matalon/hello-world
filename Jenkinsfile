@@ -1,5 +1,8 @@
 pipeline {
 	agent any
+	triggers {
+		pollSCM '* * * * *'
+	}
 	parameters {
       booleanParam defaultValue: true, description: 'Whether to build production', name: 'buildProduction'
     }
